@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context="diagnose.uvfree.uvfree.PreviewToRetake"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <diagnose.uvfree.uvfree.TouchImageView
+        android:id="@+id/taken_prev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Retake"
+            android:onClick="retakeImage" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="50"
+            android:text="Keep"
+            android:onClick="keepImage" />
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

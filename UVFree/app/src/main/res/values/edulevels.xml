@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edulevels">
+        <item>@string/edulevel1_label</item>
+        <item>@string/edulevel2_label</item>
+        <item>@string/edulevel3_label</item>
+        <item>@string/edulevel4_label</item>
+        <item>@string/edulevel5_label</item>
+    </string-array>
+</resources>

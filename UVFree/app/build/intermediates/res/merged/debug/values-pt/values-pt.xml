@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/H:/Rice/Barretos/UVFree/app/src/main/res/values-pt/strings.xml -->
+    <eat-comment/>
+    <string name="C44_0">C44.0 – LABIOS</string>
+    <string name="C44_1">C44.1 – PALPEBRAS</string>
+    <string name="C44_2">C44.2 – ORELHAS</string>
+    <string name="C44_3">C44.3 – FACE</string>
+    <string name="C44_4">C44.4 – PESCOÇO / COURO CABELUDO</string>
+    <string name="C44_5">C44.5 – TRONCO</string>
+    <string name="C44_6">C44.6 – MEMBROS SUPERIORIES</string>
+    <string name="C44_7">C44.7 – MEMBROS INFERIORES</string>
+    <!-- From: file:/H:/Rice/Barretos/UVFree/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/res/values-pt/values.xml -->
+    <eat-comment/>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Selecione um app"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Compartilhar com %s"</string>
+    <!-- From: file:/H:/Rice/Barretos/UVFree/app/src/main/res/values-pt/strings.xml -->
+    <eat-comment/>
+    <string name="about_app">Sobre este app</string>
+    <string name="about_body_loc">Selecione o local do corpo que está sendo fotografada.</string>
+    <string name="about_button">Sobre este app</string>
+    <string name="aboutapp">Melacap é um App Android para capturar imagens de anormalidades na pele, possivelmente cancerígenos de alta qualidade para o diagnóstico por um médico. Ele foi desenvolvido por uma equipe de estudantes da Universidade Rice, para o Centro de Câncer de Barretos, em Barretos, Brasil, em colaboração com o Hospital de Câncer MD Anderson, em Houston, TX.</string>
+    <string name="action_settings">Definições</string>
+    <string name="add_patient">Adicionar paciente</string>
+    <string name="add_to_queue">Adicionar à fila</string>
+    <string name="app_name">Melacap2</string>
+    <string name="apr_label">4-abr</string>
+    <string name="aug_label">8-ago</string>
+    <string name="black_label">Negra</string>
+    <string name="body_loc">Localização da lesão</string>
+    <string name="body_loc_flip">VIRA</string>
+    <string name="brown_label">Parda</string>
+    <string name="capture">CAPTURAR</string>
+    <string name="change_language">Mudar idioma</string>
+    <string name="city_label">Cidade</string>
+    <string name="configure_db">Configure Database</string>
+    <string name="configure_db_about">The following users are currently registered in the database:</string>
+    <string name="confirm">Confirmar</string>
+    <string name="confirm_text">Por favor, revise as informações e as imagens abaixo e confirme a sua qualidade. Retoma qualquer pressionando sobre eles. Em seguida, tira mais para o mesmo paciente ou adicione à fila.</string>
+    <string name="cpflabel">CPF</string>
+    <string name="day_label">Dia</string>
+    <string name="dec_label">12-dez</string>
+    <string name="dob_year">Ano</string>
+    <string name="dontknow">Não sei</string>
+    <string name="dontknowtime">Não sei</string>
+    <string name="edulevel1_label">Analfabeto</string>
+    <string name="edulevel2_label">Fundamental</string>
+    <string name="edulevel3_label">Médio</string>
+    <string name="edulevel4_label">Superior</string>
+    <string name="edulevel5_label">Pós graduação</string>
+    <string name="fam_history_label">Câncer familiar</string>
+    <string name="feb_label">2-fev</string>
+    <string name="female_label">Femenina</string>
+    <string name="first_image_prev">Primeira prévia</string>
+    <string name="first_photo">Foto próxima (2.5 cm)</string>
+    <string name="hightime">Mais de 6 meses</string>
+    <string name="indigenous_label">Índigena</string>
+    <string name="intro_screen_text">Use Melacap para capturar imagens rapidamente para o diagnóstico de melanoma, a ser analisado por um médico. O que você gostaria de fazer?</string>
+    <string name="jan_label">1-jan</string>
+    <string name="jul_label">7-jul</string>
+    <string name="jun_label">6-jun</string>
+    <string name="keep_label">FICAR</string>
+    <string name="lesion_comments_label">Informações adicionais que poderian ser útil para o dotor.</string>
+    <string name="lesion_info_button">SEGUINTE</string>
+    <string name="lesion_label"> </string>
+    <string name="login_button">CONECTE-SE</string>
+    <string name="logout">TERMINAR SESSAO</string>
+    <string name="lowtime">Menos de 30 dias</string>
+    <string name="male_label">Masculino</string>
+    <string name="mar_label">3-mar</string>
+    <string name="may_label">5-maio</string>
+    <string name="medtime">Entre 1 e 6 meses</string>
+    <string name="month_label">Mes</string>
+    <string name="mothers_name_label">Nome da mãe</string>
+    <string name="must_fill_fields">Você deve preencher todos os campos do formulário para continuar.</string>
+    <string name="no">Não</string>
+    <string name="nov_label">11-nov</string>
+    <string name="nurse_comments_label">Comentários</string>
+    <string name="oct_label">10-out</string>
+    <string name="ok">Ok</string>
+    <string name="password_label">Senha:</string>
+    <string name="patient_dob_label">Data de nascimento</string>
+    <string name="patient_edulevel_label">Escolaridade</string>
+    <string name="patient_gender_label">Gênero</string>
+    <string name="patient_name_label">Nome do paciente</string>
+    <string name="patient_skincolor_label">Cor da pele</string>
+    <string name="personalhistory_label">Câncer pessoal </string>
+    <string name="photo_queue">Fila de fotos</string>
+    <string name="photo_queue_about">Por favor, escolha as imagens que você deseja enviar, em seguida, selecione o botão "Carregar Agora".</string>
+    <string name="photo_queue_empty">Sem informação atual</string>
+    <string name="preview_image">Prévia fotos</string>
+    <string name="reg_email">Email</string>
+    <string name="reg_name">Nome e sobrenome</string>
+    <string name="reg_password">Senha</string>
+    <string name="reg_username">Usuário</string>
+    <string name="register">Novo usuário</string>
+    <string name="register_about">Preencha o formulário abaixo para registrar um novo usuário.</string>
+    <string name="register_button">NOVO USUARIO</string>
+    <string name="register_user_button">Cadastra-se</string>
+    <string name="retake_label">RE-TIRAR</string>
+    <string name="save_settings">Salvar as configurações</string>
+    <string name="second_image_prev">Segundo prévia</string>
+    <string name="second_photo">Foto distância (10 cm)</string>
+    <string name="sept_label">9-set</string>
+    <string name="settings">Definições</string>
+    <string name="settings_about">The Settings page is currently under construction.</string>
+    <string name="settings_button">Definições</string>
+    <string name="take_another">Outra foto</string>
+    <string name="take_first_photo_button">TIRE FOTOS</string>
+    <string name="take_image_info">Por favor insira as informações do paciente abaixo. Você será solicitado a tirar duas fotos - uma estreita e um da mais longe.</string>
+    <string name="take_new_button">Informação do paciente</string>
+    <string name="take_new_image">Informação do paciente</string>
+    <string name="time_lesion_label">Quanto tempo tem a lesão?</string>
+    <string name="title_activity_lesion_info">Informações adicionais</string>
+    <string name="title_activity_login">Credencial:</string>
+    <string name="title_activity_preview_to_retake">Retake?</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_uploading">Carregando</string>
+    <string name="upload_all">Carregar todas</string>
+    <string name="upload_confirm">Confirme carregamento</string>
+    <string name="upload_confirm_done">Ok</string>
+    <string name="upload_confirm_info">Os seguintes registros de pacientes foram enviados com sucesso para o banco de dados do Redcap.</string>
+    <string name="upload_photo_queue">Carregar agora</string>
+    <string name="user_doesnt_exist">O nome de usuário que você digitou não existe. Por favor, tente novamente.</string>
+    <string name="user_exists">Este nome de usuário já existe. Por favor insira um nome de usuário diferente para continuar.</string>
+    <string name="username_label">Usuário:</string>
+    <string name="uvfree">Melacap</string>
+    <string name="welcome">Bem-vindo</string>
+    <string name="white_label">Branca</string>
+    <string name="wrong_password">Desculpe, essa senha não corresponde ao seu nome de usuário. Por favor, verifique o nome de usuário e a senha, em seguida, tente novamente.</string>
+    <string name="yellow_label">Amarela</string>
+    <string name="yes">Sim</string>
+    <string name="zoomed_loc">Localização da lesão</string>
+    <string name="zoomed_select">SELECIONAR</string>
+</resources>

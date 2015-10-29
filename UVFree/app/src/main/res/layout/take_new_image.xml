@@ -1,0 +1,383 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="#ffffffff"
+    tools:context="diagnose.uvfree.uvfree.TakeNewImage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+        <EditText
+            android:id="@+id/patient_name"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="@string/patient_name_label"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="#9E9F9D"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="24sp" />
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/cpflabel"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/patient_cpf"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="@string/cpflabel"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="#9E9F9D"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/patient_dob_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/dob_day"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/dob_month"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/dob_year"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:hint="@string/dob_year"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/patient_gender_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/mothers_name_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/mothers_name"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="@string/mothers_name_label"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="#9E9F9D"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/city_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/city_name"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:hint="@string/city_label"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColorHint="#9E9F9D"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/fam_history_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/radio_famhistory"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/famhistory_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"/>
+
+                <Space android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/famhistory_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"/>
+
+                <Space android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/famhistory_dontknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dontknow"
+                    android:checked="true"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textAlignment="gravity"
+                android:text="@string/personalhistory_label"
+                android:textSize="16sp"
+                android:textColor="@color/mel_blue"
+                android:paddingTop="13dp"/>
+
+            <Space android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/radio_personalhistory"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/personalhistory_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes" />
+
+                <Space android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/personalhistory_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no"/>
+
+                <Space android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/personalhistory_dontknow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dontknow"
+                    android:checked="true"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <Space android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+
+        <Button
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="lesionInfoGo"
+            android:text="@string/lesion_info_button"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/mel_blue"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="#ffffffff"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

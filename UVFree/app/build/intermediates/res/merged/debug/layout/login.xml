@@ -1,0 +1,88 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="#ffffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <Space
+        android:layout_height="30dp"
+        android:layout_width="wrap_content" />
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:background="@drawable/melacap_logo" />
+
+
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/reg_username"
+        android:textAlignment="center"
+        android:textColorHint="#9E9F9D"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_height="10dp"
+        android:layout_width="wrap_content" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/reg_password"
+        android:textAlignment="center"
+        android:textColorHint="#9E9F9D"
+        android:textSize="20sp"
+        android:inputType="textPassword"/>
+
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="wrap_content" />
+
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="login"
+        android:text="@string/login_button"
+        android:textColor="@color/mel_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#ffffffff"/>
+
+    <Space
+        android:layout_height="5dp"
+        android:layout_width="wrap_content" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="register"
+        android:text="@string/register_button"
+        android:textColor="@color/mel_blue"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="#ffffffff" />
+
+</LinearLayout>
+<!-- From: file:/H:/Rice/Barretos/UVFree/app/src/main/res/layout/login.xml -->

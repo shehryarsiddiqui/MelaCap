@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Melacap</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- For Testing Purposes Only - REMOVE -->
+    <string name="title_activity_test">Test</string>
+
+    <!-- Login Activity -->
+    <string name="title_activity_login">Login</string>
+    <string name="uvfree">Melacap</string>
+    <string name="username_label">Username:</string>
+    <string name="password_label">Password:</string>
+    <string name="login_button">LOGIN</string>
+    <string name="register_button">NEW USER</string>
+
+    <!-- Dialogue Text -->
+    <string name="must_fill_fields">You must fill out all of the fields in the form to continue.</string>
+    <string name="ok">Ok</string>
+    <string name="user_exists">That username already exists. Please enter a different username to continue.</string>
+    <string name="user_doesnt_exist">The username you entered doesn\'t exist. Please try again.</string>
+    <string name="wrong_password">Sorry, that password doesn\'t match your username. Please check the username and password, then try again.</string>
+
+    <!-- Register Activity -->
+    <string name="register">New user</string>
+    <string name="register_about">Fill out the form below to register a new user for this app.</string>
+    <string name="reg_username">Username</string>
+    <string name="reg_password">Password</string>
+    <string name="reg_name">Name (first and last)</string>
+    <string name="reg_email">Email address</string>
+    <string name="register_user_button">Register new user</string>
+
+    <!-- ConfigureDB Activity -->
+    <string name="configure_db">Configure Database</string>
+    <string name="configure_db_about">The following users are currently registered in the database:</string>
+
+    <!-- MainActivity Activity -->
+    <string name="take_new_button">Patient information</string>
+    <string name="add_patient">Add patient</string>
+    <string name="photo_queue">Photo queue</string>
+    <string name="settings_button">Settings</string>
+    <string name="about_button">About This App</string>
+    <string name="logout">LOGOUT</string>
+    <string name="intro_screen_text">Use Melacap to quickly capture images for melanoma diagnosis, to be analyzed by a physician. What would you like to do?</string>
+    <string name="welcome">Welcome</string>
+
+    <!-- AboutApp Activity -->
+    <string name="aboutapp">Melacap is an Android App for capturing high-quality images of possibly cancerous skin abnormalities for diagnosis by a physician. It was developed by a team of students from Rice University for the Hospital de Câncer de Barretos in Barretos, Brazil, in collaboration with the MD Anderson Cancer Hospital in Houston, Texas.</string>
+    <string name="about_app">About this app</string>
+
+    <!-- Settings Activity -->
+    <string name="save_settings">Save settings</string>
+    <string name="settings_about">The Settings page is currently under construction.</string>
+    <string name="settings">Settings</string>
+    <string name="change_language">Toggle Language</string>
+
+    <!-- PhotoQueue Activity -->
+    <string name="photo_queue_about">Please choose the images you would like to upload then select the Upload Now button.</string>
+    <string name="upload_all">Upload all</string>
+    <string name="upload_photo_queue">Upload now</string>
+    <string name="delete_photo_queue">Delete</string>
+    <string name="photo_queue_empty">No current patient information.</string>
+
+    <!-- PreviewDiag Activity -->
+    <string name="preview_image">Preview Photos</string>
+
+    <!-- UploadConfirm Activity -->
+    <string name="upload_confirm">Confirm Uploads</string>
+    <string name="upload_confirm_info">The patients were successfully uploaded to the database.</string>
+    <string name="upload_confirm_done">Done</string>
+
+    <!-- AddPatient Activity -->
+    <string name="take_new_image">Patient information</string>
+    <string name="take_image_info">Please enter Patient information below. You will be asked to take two photos - one close using the standoff device and one from further away.</string>
+    <string name="patient_name_label">Patient name</string>
+    <string name="patient_dob_label">Date of birth</string>
+    <string name="patient_gender_label">Gender</string>
+    <string name="patient_skincolor_label">Skin color</string>
+    <string name="dob_year">Year</string>
+    <string name="mothers_name_label">Mother\'s name</string>
+    <string name="patient_edulevel_label">Edu. level</string>
+    <string name="city_label">City</string>
+    <string name="fam_history_label">Family cancer</string>
+    <string name="personalhistory_label">Personal cancer</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="dontknow">Don\'t know</string>
+    <string name="cpflabel">CPF</string>
+    <string name="lesion_info_button">NEXT</string>
+
+    <!-- BodyLocation Activity -->
+    <string name="about_body_loc">Select the location on the body that is being photographed.</string>
+    <string name="body_loc">Location of lesion</string>
+    <string name="body_loc_flip">FLIP</string>
+
+    <!-- LesionLocation label -->
+    <string name="lesion_label"> </string>
+    <string name="C44_0">C44.0 – LIPS</string>
+    <string name="C44_1">C44.1 – EYELIDS</string>
+    <string name="C44_2">C44.2 – EARS</string>
+    <string name="C44_3">C44.3 – FACE</string>
+    <string name="C44_4">C44.4 – SCALP / NECK</string>
+    <string name="C44_5">C44.5 – TORSO</string>
+    <string name="C44_6">C44.6 – SUPERIOR EXTREMITIES</string>
+    <string name="C44_7">C44.7 – INFERIOR EXTREMITIES</string>
+
+
+    <!-- ZoomedLocation Activity -->
+    <string name="zoomed_loc">Location of lesion</string>
+    <string name="zoomed_select">SELECT</string>
+
+    <!-- FirstPhoto Activity and SecondPhoto Activity-->
+    <string name="first_photo">Close Photo (1 inch)</string>
+    <string name="capture">CAPTURE</string>
+    <string name="second_photo">Context Photo (4 inches)</string>
+
+    <!-- Confirm Activity -->
+    <string name="confirm">Confirm and Submit</string>
+    <string name="confirm_text">Please review the information and images below and confirm their quality. Then, either submit the images or save them to the photo queue to be uploaded later.</string>
+    <string name="take_another">Another Photo</string>
+    <string name="add_to_queue">Add to Photo Queue</string>
+    <string name="first_image_prev">First Image Preview</string>
+    <string name="second_image_prev">Second Image Preview</string>
+    <string name="confirm_badqual">Warning, one or both of the images may be low quality. Please review carefully and retake as needed before submitting.</string>
+
+    <!-- Preview to Retake Activity -->
+    <string name="title_activity_preview_to_retake">Retake?</string>
+    <string name="retake_label">RETAKE</string>
+    <string name="keep_label">KEEP</string>
+
+    <!-- LesionInfo Activity -->
+    <string name="title_activity_lesion_info">Lesion information</string>
+    <string name="time_lesion_label">How long have you had this lesion?</string>
+    <string name="lowtime">Less than 30 days</string>
+    <string name="medtime">Between 1 to 6 months</string>
+    <string name="hightime">More than 6 months</string>
+    <string name="dontknowtime">Don\'t know</string>
+    <string name="nurse_comments_label">Comments</string>
+    <string name="take_first_photo_button">TAKE IMAGES</string>
+    <string name="title_activity_uploading">Uploading</string>
+    <string name="lesion_comments_label">Extra information for the doctor that could be helpful.</string>
+
+
+    <!-- Date of birth selection -->
+    <string name="day_label">Day</string>
+    <string name="month_label">Month</string>
+    <string name="jan_label">1-Jan</string>
+    <string name="feb_label">2-Feb</string>
+    <string name="mar_label">3-Mar</string>
+    <string name="apr_label">4-Apr</string>
+    <string name="may_label">5-May</string>
+    <string name="jun_label">6-Jun</string>
+    <string name="jul_label">7-Jul</string>
+    <string name="aug_label">8-Aug</string>
+    <string name="sept_label">9-Sept</string>
+    <string name="oct_label">10-Oct</string>
+    <string name="nov_label">11-Nov</string>
+    <string name="dec_label">12-Dec</string>
+
+    <!-- Gender selection -->
+    <string name="male_label">Male</string>
+    <string name="female_label">Female</string>
+
+    <!-- Skin color selection -->
+    <string name="black_label">Black</string>
+    <string name="white_label">White</string>
+    <string name="yellow_label">Yellow</string>
+    <string name="brown_label">Brown</string>
+    <string name="indigenous_label">Indigenous</string>
+
+    <!-- Education level selection -->
+    <string name="edulevel1_label">Illiterate</string>
+    <string name="edulevel2_label">Elementary</string>
+    <string name="edulevel3_label">High School</string>
+    <string name="edulevel4_label">College</string>
+    <string name="edulevel5_label">Graduate</string>
+
+
+
+
+
+</resources>

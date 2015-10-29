@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dobmonth">
+        <item>Month</item>
+        <item>(1)Jan</item>
+        <item>(2)Feb</item>
+        <item>(3)Mar</item>
+        <item>(4)Apr</item>
+        <item>(5)May</item>
+        <item>(6)Jun</item>
+        <item>(7)Jul</item>
+        <item>(8)Aug</item>
+        <item>(9)Sep</item>
+        <item>(10)Oct</item>
+        <item>(11)Nov</item>
+        <item>(12)Dec</item>
+    </string-array>
+</resources>

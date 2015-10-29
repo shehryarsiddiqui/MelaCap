@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genders">
+        <item>@string/male_label</item>
+        <item>@string/female_label</item>
+    </string-array>
+</resources>
