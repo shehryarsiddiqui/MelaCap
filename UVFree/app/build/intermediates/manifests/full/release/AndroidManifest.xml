@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="diagnose.uvfree.uvfree"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <!-- Request camera permissions and storage permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Require that a camera is required to use this app -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- Uses Autofocus permission as well -->
+    <uses-feature
+        android:name="android.harware.camera.autofocus"
+        android:required="false" />
+    <!-- Request Storage Writing permission to save and store data -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Request Geolocation permission for image tagging -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Request Internet permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        /* SplashScreen Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        /* MainActivity Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* Login Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* Register Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.Register"
+            android:label="@string/register"
+            android:parentActivityName="diagnose.uvfree.uvfree.Login"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* ConfigureDB Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.ConfigureDB"
+            android:label="@string/configure_db"
+            android:parentActivityName="diagnose.uvfree.uvfree.Login"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Login" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* AboutApp Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.AboutApp"
+            android:label="@string/about_app"
+            android:parentActivityName="diagnose.uvfree.uvfree.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* Settings Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.Settings"
+            android:label="@string/settings"
+            android:parentActivityName="diagnose.uvfree.uvfree.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* PhotoQueue Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.PhotoQueue"
+            android:label="@string/photo_queue"
+            android:parentActivityName="diagnose.uvfree.uvfree.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* PreviewDiag Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.PreviewDiag"
+            android:label="@string/preview_image"
+            android:parentActivityName="diagnose.uvfree.uvfree.PhotoQueue"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PhotoQueue" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* UploadConfirm Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.UploadConfirm"
+            android:label="@string/upload_confirm"
+            android:parentActivityName="diagnose.uvfree.uvfree.PhotoQueue"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PhotoQueue" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* TakeNewImage Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.TakeNewImage"
+            android:label="@string/take_new_image"
+            android:parentActivityName="diagnose.uvfree.uvfree.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* BodyLocation Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.BodyLocation"
+            android:label="@string/body_loc"
+            android:launchMode="singleTop"
+            android:parentActivityName="diagnose.uvfree.uvfree.TakeNewImage"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TakeNewImage" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* ZoomedLocation Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.ZoomedLocation"
+            android:label="@string/zoomed_loc"
+            android:parentActivityName="diagnose.uvfree.uvfree.BodyLocation"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BodyLocation" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* FirstPhoto Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.FirstPhoto"
+            android:label="@string/first_photo"
+            android:parentActivityName="diagnose.uvfree.uvfree.BodyLocation"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BodyLocation" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* SecondPhoto Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.SecondPhoto"
+            android:label="@string/second_photo"
+            android:parentActivityName="diagnose.uvfree.uvfree.FirstPhoto"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FirstPhoto" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* Confirm Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.Confirm"
+            android:label="@string/confirm"
+            android:parentActivityName="diagnose.uvfree.uvfree.SecondPhoto"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SecondPhoto" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        /* PreviewToRetake Activity */
+        <activity
+            android:name="diagnose.uvfree.uvfree.PreviewToRetake"
+            android:label="@string/title_activity_preview_to_retake"
+            android:parentActivityName="diagnose.uvfree.uvfree.Confirm"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Confirm" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.GENERAL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="diagnose.uvfree.uvfree.LesionInfo"
+            android:label="@string/title_activity_lesion_info"
+            android:parentActivityName="diagnose.uvfree.uvfree.ZoomedLocation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="diagnose.uvfree.uvfree.ZoomedLocation" />
+        </activity>
+        <activity
+            android:name="diagnose.uvfree.uvfree.Uploading"
+            android:label="@string/title_activity_uploading" >
+        </activity>
+    </application>
+
+</manifest>

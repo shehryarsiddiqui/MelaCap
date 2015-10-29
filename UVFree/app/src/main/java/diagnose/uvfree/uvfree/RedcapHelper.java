@@ -257,7 +257,7 @@ public class RedcapHelper {
                 File img1 = new File(toUpload.getImage1());
                 ByteArrayOutputStream baos1 = new ByteArrayOutputStream();
                 //Bitmap bmp1 = BitmapFactory.decodeFile(img1.getAbsolutePath());
-                Bitmap bmp1 = decodeSampledBitmapFromFile(img1.getAbsolutePath(),2592,1944);
+                Bitmap bmp1 = decodeSampledBitmapFromFile(img1.getAbsolutePath(),1024,768);    //changed from 2592,1944
                 bmp1.compress(Bitmap.CompressFormat.PNG, 80, baos1);
                 byte[] byte1 = baos1.toByteArray();
 
@@ -293,7 +293,7 @@ public class RedcapHelper {
                 File img2 = new File(toUpload.getImage2());
                 ByteArrayOutputStream baos2 = new ByteArrayOutputStream();
                 //Bitmap bmp2 = BitmapFactory.decodeFile(img2.getAbsolutePath());
-                Bitmap bmp2 = decodeSampledBitmapFromFile(img2.getAbsolutePath(),2592,1944);
+                Bitmap bmp2 = decodeSampledBitmapFromFile(img2.getAbsolutePath(),1024,768);     //changed from 2592,1944
                 bmp2.compress(Bitmap.CompressFormat.PNG, 80, baos2);
                 byte[] byte2 = baos2.toByteArray();
 
@@ -361,14 +361,15 @@ public class RedcapHelper {
 
         if (height > reqHeight || width > reqWidth) {
 
-            // Calculate ratios of height and width to requested height and width
-            final int heightRatio = Math.round((float) height / (float) reqHeight);
-            final int widthRatio = Math.round((float) width / (float) reqWidth);
+            final int halfHeight = height / 2;
+            final int halfWidth = width / 2;
 
-            // Choose the smallest ratio as inSampleSize value, this will guarantee
-            // a final image with both dimensions larger than or equal to the
-            // requested height and width.
-            inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
+            // Calculate the largest inSampleSize value that is a power of 2 and keeps both
+            // height and width larger than the requested height and width.
+            while ((halfHeight / inSampleSize) > reqHeight
+                    && (halfWidth / inSampleSize) > reqWidth) {
+                inSampleSize *= 2;
+            }
         }
 
         return inSampleSize;
@@ -377,21 +378,21 @@ public class RedcapHelper {
     public static Bitmap decodeSampledBitmapFromFile(String path, int reqWidth, int reqHeight) {
 
         //TODO: appcrash caused by decodeFile, fix commented lines, inJustDecodeBounds = true
+
         // First decode with inJustDecodeBounds=true to check dimensions
         final BitmapFactory.Options options = new BitmapFactory.Options();
-        options.inJustDecodeBounds = false;
+        options.inJustDecodeBounds = true;
         options.inPreferredConfig = Bitmap.Config.RGB_565;
         options.inDither = true;
-//        BitmapFactory.decodeFile(path, options);
+        BitmapFactory.decodeFile(path, options);
 
         // Calculate inSampleSize
         options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
 
         // Decode bitmap with inSampleSize set
         options.inJustDecodeBounds = false;
-        Bitmap myBitmap = Bitmap.createBitmap(reqWidth,reqHeight,Bitmap.Config.RGB_565);
-        //return BitmapFactory.decodeFile(path,options);
-        return myBitmap;
+//      return Bitmap.createBitmap(reqWidth,reqHeight,Bitmap.Config.RGB_565);      //blank bitmap for testing
+        return BitmapFactory.decodeFile(path,options);
     }
 
 

@@ -177,11 +177,17 @@ public class PreviewDiag extends ActionBarActivity {
             File p1 = new File(currentPhoto.getImage1());
             File p2 = new File(currentPhoto.getImage2());
 
-//            Bitmap prev1 = BitmapFactory.decodeFile(p1.getAbsolutePath()).copy(Bitmap.Config.RGB_565, true);
- //           Bitmap prev2 = BitmapFactory.decodeFile(p2.getAbsolutePath()).copy(Bitmap.Config.RGB_565, true);
 
-            Bitmap prev1 = BitmapFactory.decodeResource(getResources(), R.drawable.cid0);
-            Bitmap prev2 = BitmapFactory.decodeResource(getResources(), R.drawable.cid0);
+            // TODO: Crashed caused by OOM in decodeFile?
+
+            Bitmap prev1 = decodeSampledBitmapFromFile(p1.getAbsolutePath(), 1024,768);
+            Bitmap prev2 = decodeSampledBitmapFromFile(p2.getAbsolutePath(), 1024,768);
+
+//            Bitmap prev1 = BitmapFactory.decodeFile(p1.getAbsolutePath()).copy(Bitmap.Config.RGB_565, true);
+//            Bitmap prev2 = BitmapFactory.decodeFile(p2.getAbsolutePath()).copy(Bitmap.Config.RGB_565, true);
+
+//            Bitmap prev1 = BitmapFactory.decodeResource(getResources(), R.drawable.cid0);
+//            Bitmap prev2 = BitmapFactory.decodeResource(getResources(), R.drawable.cid0);
 
             int width = prev1.getWidth();
             int height = prev1.getHeight();
@@ -196,7 +202,7 @@ public class PreviewDiag extends ActionBarActivity {
                 heightScaled = (int) Math.round(widthScaled / aspectRatio);
             } else {
                 heightScaled = Math.round(((screenWidth / 2) * 9) / 10);
-                widthScaled = (int) Math.round(heightScaled * aspectRatio);
+                widthScaled = (int) Math.round(heightScaled * aspectRatio);     //Should it be heightScaled / aspectRatio instead of * ?
             }
 
             float wScale = (float) widthScaled / width;
@@ -296,4 +302,44 @@ public class PreviewDiag extends ActionBarActivity {
 
         return output;
     }
+
+
+    public static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
+        // Raw height and width of image
+        final int height = options.outHeight;
+        final int width = options.outWidth;
+        int inSampleSize = 1;
+
+        if (height > reqHeight || width > reqWidth) {
+
+            // Calculate ratios of height and width to requested height and width
+            final int heightRatio = Math.round((float) height / (float) reqHeight);
+            final int widthRatio = Math.round((float) width / (float) reqWidth);
+
+            // Choose the smallest ratio as inSampleSize value, this will guarantee
+            // a final image with both dimensions larger than or equal to the
+            // requested height and width.
+            inSampleSize = heightRatio < widthRatio ? heightRatio : widthRatio;
+        }
+
+        return inSampleSize;
+    }
+
+    public static Bitmap decodeSampledBitmapFromFile(String path,int reqWidth, int reqHeight) {
+
+        // First decode with inJustDecodeBounds=true to check dimensions
+        final BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(path, options);
+
+        // Calculate inSampleSize
+        options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+
+        // Decode bitmap with inSampleSize set
+        options.inJustDecodeBounds = false;
+        options.inPreferredConfig = Bitmap.Config.RGB_565;
+        options.inDither = true;
+        return BitmapFactory.decodeFile(path,options);
+    }
+
 }
