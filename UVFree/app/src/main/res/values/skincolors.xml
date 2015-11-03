@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="skincolors">
+        <item>@string/white_label</item>
+        <item>@string/black_label</item>
+        <item>@string/brown_label</item>
+        <item>@string/yellow_label</item>
+        <item>@string/indigenous_label</item>
+    </string-array>
+</resources>
