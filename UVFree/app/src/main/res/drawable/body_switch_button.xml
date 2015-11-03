@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_enabled="true"
-        android:drawable="@drawable/ic_body_switch" /> <!-- enabled -->
-    <item android:drawable="@drawable/ic_body_switch" /> <!-- default -->
-
-</selector>
